@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body onload="move('element')">
+
+
+    <div class="container">
+        <div class="element" style="background: red;"></div>
+        <div class="element" style="background: yellow;"></div>
+        <div class="element" style="background: green;"></div>
+        <div class="element" style="background: blue;"></div>
+    </div>
+
+    <!-- <script>
+        var chooseElement;
+
+        const move = function(element){
+            const elements = document.querySelectorAll(".element")
+
+            elements.forEach(element => {
+                element.addEventListener("mousedown", () => {
+                    element.style.position = "absolute"
+                    chooseElement = element
+
+                    document.onmousemove = (e) => {
+                        var x = e.pageX
+                        var y = e.pageY
+
+                        chooseElement.style.left = x -50 + "px"
+                        chooseElement.style.top = y -50 + "px"
+
+                        console.log(chooseElement)
+                    }
+                })
+            })
+
+            document.onmouseup = function(e){
+                chooseElement = null
+            }
+        }
+    </script> -->
+        
+    
+</body>
+</html>
